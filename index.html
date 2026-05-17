@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA — Electric Vehicles</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">NOVA</div>
+  <div class="nav-links">
+    <a href="#">Models</a>
+    <a href="#">Technology</a>
+    <a href="#">Charging</a>
+    <a href="#">Company</a>
+  </div>
+  <a href="#" class="nav-order">Order Now</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg-text">NOVA</div>
+
+  <div class="hero-badge">
+    <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="#00e5ff"/></svg>
+    Now Available — Deliveries Q3 2025
+  </div>
+
+  <h1 class="hero-title">
+    RE<span class="accent">DE</span><br>FINE<br>MOTION.
+  </h1>
+  <div class="hero-tagline">Pure Electric. Pure Power.</div>
+
+  <div class="hero-metrics">
+    <div class="hm">
+      <div class="hm-val">1.9<span class="hm-unit">s</span></div>
+      <div class="hm-label">0–100 km/h</div>
+    </div>
+    <div class="hm-div"></div>
+    <div class="hm">
+      <div class="hm-val">720<span class="hm-unit">km</span></div>
+      <div class="hm-label">Range WLTP</div>
+    </div>
+    <div class="hm-div"></div>
+    <div class="hm">
+      <div class="hm-val">1,020<span class="hm-unit">hp</span></div>
+      <div class="hm-label">Peak Power</div>
+    </div>
+  </div>
+
+  <div class="hero-actions">
+    <a href="#" class="btn-primary-nova">Order Now</a>
+    <a href="#" class="btn-ghost-nova">Explore Models</a>
+  </div>
+
+  <!-- SVG abstraction of a car side profile -->
+  <div class="hero-car">
+    <svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+      <defs>
+        <filter id="glow-e">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <linearGradient id="car-body" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#2a2a40"/>
+          <stop offset="100%" stop-color="#0e0e1a"/>
+        </linearGradient>
+        <linearGradient id="glow-line" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="transparent"/>
+          <stop offset="30%" stop-color="#00e5ff"/>
+          <stop offset="70%" stop-color="#00e5ff"/>
+          <stop offset="100%" stop-color="transparent"/>
+        </linearGradient>
+      </defs>
+      <!-- Shadow -->
+      <ellipse cx="450" cy="380" rx="400" ry="18" fill="rgba(0,229,255,0.06)"/>
+      <!-- Wheels -->
+      <circle cx="200" cy="330" r="58" fill="#0a0a10" stroke="#1e1e2e" stroke-width="2"/>
+      <circle cx="200" cy="330" r="42" fill="none" stroke="#1e1e2e" stroke-width="1.5"/>
+      <circle cx="200" cy="330" r="14" fill="#151520"/>
+      <circle cx="700" cy="330" r="58" fill="#0a0a10" stroke="#1e1e2e" stroke-width="2"/>
+      <circle cx="700" cy="330" r="42" fill="none" stroke="#1e1e2e" stroke-width="1.5"/>
+      <circle cx="700" cy="330" r="14" fill="#151520"/>
+      <!-- Wheel glow -->
+      <circle cx="200" cy="330" r="58" fill="none" stroke="rgba(0,229,255,0.12)" stroke-width="2"/>
+      <circle cx="700" cy="330" r="58" fill="none" stroke="rgba(0,229,255,0.12)" stroke-width="2"/>
+      <!-- Car body -->
+      <path d="M140 295 Q160 220, 280 170 L400 150 Q520 130, 600 155 L760 180 Q840 200, 850 270 L850 295 Z" fill="url(#car-body)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <!-- Windshield -->
+      <path d="M285 175 L360 152 L395 172 L330 218 Z" fill="rgba(0,229,255,0.05)" stroke="rgba(0,229,255,0.15)" stroke-width="0.5"/>
+      <!-- Side windows -->
+      <path d="M400 152 L540 140 L580 160 L400 174 Z" fill="rgba(0,229,255,0.05)" stroke="rgba(0,229,255,0.12)" stroke-width="0.5"/>
+      <path d="M545 140 L600 140 L640 160 L582 162 Z" fill="rgba(0,229,255,0.04)" stroke="rgba(0,229,255,0.1)" stroke-width="0.5"/>
+      <!-- Side electric stripe -->
+      <path d="M140 265 L850 265" stroke="url(#glow-line)" stroke-width="1.5" fill="none" filter="url(#glow-e)" opacity="0.7"/>
+      <!-- Front light -->
+      <path d="M138 260 L138 290 Q140 295, 148 292 L148 255 Z" fill="rgba(0,229,255,0.4)" filter="url(#glow-e)"/>
+      <!-- Rear light -->
+      <path d="M848 240 L852 240 Q858 242, 858 248 L858 285 Q856 292, 850 295 L848 295 Z" fill="rgba(255,100,0,0.6)" filter="url(#glow-e)"/>
+      <!-- Door lines -->
+      <path d="M400 175 L395 293" stroke="rgba(255,255,255,0.04)" stroke-width="1" fill="none"/>
+      <path d="M545 162 L545 285" stroke="rgba(255,255,255,0.04)" stroke-width="1" fill="none"/>
+      <!-- Charge port -->
+      <rect x="645" y="185" width="12" height="20" rx="2" fill="rgba(0,229,255,0.3)" filter="url(#glow-e)"/>
+      <!-- Road reflection -->
+      <line x1="0" y1="390" x2="900" y2="390" stroke="rgba(0,229,255,0.06)" stroke-width="1"/>
+    </svg>
+  </div>
+</section>
+
+<div class="specs-bar">
+  <div class="spec">
+    <div class="spec-val">1.9<span class="u">s</span></div>
+    <div class="spec-label">0 to 100 km/h</div>
+  </div>
+  <div class="spec">
+    <div class="spec-val">720<span class="u">km</span></div>
+    <div class="spec-label">WLTP Range</div>
+  </div>
+  <div class="spec">
+    <div class="spec-val">350<span class="u">kW</span></div>
+    <div class="spec-label">Max Charging</div>
+  </div>
+  <div class="spec">
+    <div class="spec-val">18<span class="u">min</span></div>
+    <div class="spec-label">10→80% Fast Charge</div>
+  </div>
+  <div class="spec">
+    <div class="spec-val">1020<span class="u">hp</span></div>
+    <div class="spec-label">Peak Horsepower</div>
+  </div>
+</div>
+
+<section class="models-section">
+  <div class="section-header">
+    <div>
+      <div class="section-eyebrow">Lineup 2025</div>
+      <div class="section-title">CHOOSE YOUR<br>NOVA.</div>
+    </div>
+  </div>
+  <div class="models-grid">
+    <div class="model-card">
+      <div class="model-name">N1</div>
+      <div class="model-sub">Standard Range</div>
+      <div class="model-feature"><span>Range</span><span>480 km</span></div>
+      <div class="model-feature"><span>0–100</span><span>3.2 s</span></div>
+      <div class="model-feature"><span>Power</span><span>450 hp</span></div>
+      <div class="model-feature"><span>Drive</span><span>Rear-wheel</span></div>
+      <div class="model-price">
+        <div class="model-price-from">Starting from</div>
+        <div class="model-price-val">€68,900</div>
+      </div>
+    </div>
+    <div class="model-card" style="border-color:rgba(0,229,255,0.15);">
+      <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--electric);margin-bottom:8px;font-size:9px;">★ Bestseller</div>
+      <div class="model-name" style="color:var(--electric);">N3</div>
+      <div class="model-sub">Long Range AWD</div>
+      <div class="model-feature"><span>Range</span><span>720 km</span></div>
+      <div class="model-feature"><span>0–100</span><span>2.4 s</span></div>
+      <div class="model-feature"><span>Power</span><span>780 hp</span></div>
+      <div class="model-feature"><span>Drive</span><span>All-wheel</span></div>
+      <div class="model-price">
+        <div class="model-price-from">Starting from</div>
+        <div class="model-price-val">€94,900</div>
+      </div>
+    </div>
+    <div class="model-card">
+      <div class="model-name">NX</div>
+      <div class="model-sub">Plaid Performance</div>
+      <div class="model-feature"><span>Range</span><span>580 km</span></div>
+      <div class="model-feature"><span>0–100</span><span>1.9 s</span></div>
+      <div class="model-feature"><span>Power</span><span>1,020 hp</span></div>
+      <div class="model-feature"><span>Drive</span><span>Tri-motor</span></div>
+      <div class="model-price">
+        <div class="model-price-from">Starting from</div>
+        <div class="model-price-val">€138,000</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="energy-section">
+  <div>
+    <div class="section-eyebrow">Charging Network</div>
+    <h2 class="energy-title">POWER AT<br>THE SPEED OF<br><span class="hl">LIFE.</span></h2>
+    <p class="energy-desc">800V architecture. 350kW peak charge rate. From 10% to 80% in 18 minutes at any NOVA Supernode. 4,200 stations across Europe.</p>
+    <a href="#" class="btn-primary-nova" style="display:inline-block;">Find Stations</a>
+  </div>
+  <div class="charge-bar-wrap" id="charge-bars">
+    <div style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-bottom:28px;">Live Network Stats</div>
+    <div class="charge-row">
+      <div class="charge-label"><span>Stations Online</span><span>4,218</span></div>
+      <div class="charge-track"><div class="charge-fill" style="width:0%" data-w="96%"></div></div>
+    </div>
+    <div class="charge-row">
+      <div class="charge-label"><span>Availability Now</span><span>94%</span></div>
+      <div class="charge-track"><div class="charge-fill" style="width:0%" data-w="94%"></div></div>
+    </div>
+    <div class="charge-row">
+      <div class="charge-label"><span>Avg Wait Time</span><span>0 min</span></div>
+      <div class="charge-track"><div class="charge-fill" style="width:0%;background:linear-gradient(90deg,#00e5a0,#00e5ff)" data-w="88%"></div></div>
+    </div>
+    <div class="charge-row">
+      <div class="charge-label"><span>Green Energy</span><span>100%</span></div>
+      <div class="charge-track"><div class="charge-fill" style="width:0%;background:linear-gradient(90deg,#00b050,#00e5ff)" data-w="100%"></div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <div class="footer-brand">NOVA</div>
+    <p style="font-size:13px;font-weight:300;color:var(--muted);line-height:1.7;">Electric vehicles engineered<br>for a better world.</p>
+  </div>
+  <div class="footer-col">
+    <h5>Vehicles</h5>
+    <a href="#">N1 Standard</a><a href="#">N3 Long Range</a><a href="#">NX Performance</a><a href="#">Compare</a>
+  </div>
+  <div class="footer-col">
+    <h5>Charging</h5>
+    <a href="#">Supernode Map</a><a href="#">Home Charging</a><a href="#">Plans</a><a href="#">Partners</a>
+  </div>
+  <div class="footer-col">
+    <h5>Company</h5>
+    <a href="#">About</a><a href="#">Careers</a><a href="#">Newsroom</a><a href="#">Investors</a>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <span>© 2025 NOVA Automotive GmbH. All rights reserved.</span>
+  <span style="color:var(--electric);font-size:12px;letter-spacing:0.08em;">ZERO EMISSIONS. ZERO COMPROMISE.</span>
+</div>
+
+ <script src="script.js"></script>
+</body>
+</html>
